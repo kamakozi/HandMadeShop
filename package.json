@@ -1,8 +1,10 @@
 {
   "name": "hand-made-shop",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
+    "dev": "ts-node --esm src/server.ts",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

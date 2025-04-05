@@ -47,11 +47,8 @@ export class AppComponent {
 
     this.itemName = "";
     this.itemDescription = "";
-
     this.closePopup();
   }
 
-  constructor(private  itemService: ItemService) {
-    this.loadItems();
-  }
+
 }
