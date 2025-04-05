@@ -1,0 +1,1 @@
+CREATE TABLE items (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(225) not null, DESCRIPTION text, available_units INT DEFAULT 0);

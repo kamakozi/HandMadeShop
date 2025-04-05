@@ -1,0 +1,26 @@
+<button (click)="openPopup()">Add new item</button>
+
+<div class="popout" *ngIf="showPopup">
+  <div class="popout-content">
+    <h3>Add new item!</h3>
+    <br>
+    <input type="text" placeholder="Item title" [(ngModel)]="itemName">
+    <input type="text" placeholder="Description" [(ngModel)]="itemDescription">
+    <button (click)="submit()">Add item</button>
+    <button (click)="closePopup()">Cancel</button>
+
+  </div>
+  <div>
+    <ol>
+      <li *ngFor="let item of allItems">
+        <strong>{{ item.title }}</strong>: {{ item.description }} (Available: {{ item.availableUnits }})
+      </li>
+    </ol>
+  </div>
+</div>
+
+
+
+
+
+<router-outlet />
